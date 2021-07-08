@@ -1,0 +1,40 @@
+.hero-section {
+  //Size
+  height: 50vh;
+  @media (min-width: 768px) {
+    height: 80vh;
+  }
+
+  //Padding & Margins
+  padding-top: 86px;
+
+  //Design
+  background-image: url("../images/hero-image.jpg");
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  h1 {
+    //Padding & Margins
+    margin: 0;
+
+    //Design
+    font-size: 48px;
+    @media (min-width: 900px) {
+      font-size: 96px;
+    }
+  }
+
+  h2 {
+    //Padding & Margins
+    margin: 0;
+
+    //Design
+    color: $light;
+    font-size: 40px;
+    @media (min-width: 900px) {
+      font-size: 80px;
+    }
+  }
+}

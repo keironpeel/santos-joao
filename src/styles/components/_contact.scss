@@ -1,0 +1,79 @@
+.contact-faq {
+  //Padding & Margins
+  @include page-margin;
+  margin-top: 112px;
+  margin-bottom: 112px;
+
+  //Display
+  display: flex;
+  justify-content: center;
+
+  .contact-faq-content {
+    //Size
+    @include page-container;
+
+    //Display
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+  }
+
+  .contact {
+    //Size
+    width: 100%;
+    @media (min-width: 992px) {
+      width: 50%;
+    }
+
+    //Padding & Margins
+    margin-right: 200px;
+    margin-bottom: 80px;
+    @media (min-width: 992px) {
+      margin-bottom: 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input,
+      textarea {
+        all: unset;
+
+        //Size
+        min-height: 32px;
+
+        //Padding & Margins
+        padding: 2px 8px;
+        margin-bottom: 16px;
+
+        //Design
+        border: $primary 2px solid;
+        border-radius: 8px;
+
+        &:focus {
+          //Design
+          background-color: $secondary;
+          color: $light;
+        }
+      }
+
+      textarea {
+        //Size
+        min-height: 128px;
+
+        //Padding & Margins
+        margin-bottom: 0;
+      }
+
+      button {
+        all: unset;
+
+        //Design
+        @include button;
+      }
+    }
+  }
+}

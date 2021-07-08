@@ -1,0 +1,44 @@
+$primary: #2151a6;
+$secondary: #7fa4e6;
+$dark: #0a1933;
+$light: #ffffff;
+
+$display: "DM Serif Display", serif;
+$text: "Lato", sans-serif;
+
+@mixin page-container {
+  width: 100%;
+  max-width: 1440px;
+}
+
+@mixin page-margin {
+  padding-left: 24px;
+  padding-right: 24px;
+  @media (min-width: 576px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media (min-width: 992px) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+@mixin button {
+  //Size
+  width: fit-content;
+
+  //Padding & Margins
+  margin-top: 32px;
+  padding: 8px 32px;
+
+  //Display
+  display: block;
+
+  //Design
+  background-color: $primary;
+  border-radius: 8px;
+  color: $light;
+  cursor: pointer;
+  text-decoration: none;
+}

@@ -1,0 +1,128 @@
+.how-it-works {
+  //Padding & Margins
+  @include page-margin;
+  margin-bottom: 64px;
+  @media (min-width: 768px) {
+    margin-bottom: 112px;
+  }
+
+  //Display
+  display: flex;
+  justify-content: center;
+
+  .how-it-works-content {
+    //Size
+    @include page-container;
+
+    h2 {
+      //Padding & Margins
+      margin-bottom: 16px;
+      @media (min-width: 768px) {
+        margin-bottom: 64px;
+      }
+
+      //Design
+      text-align: left;
+      @media (min-width: 768px) {
+        text-align: center;
+      }
+    }
+
+    .how-it-works__process {
+      //Padding & Margins
+      margin-bottom: 52px;
+
+      //Display
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+
+      .process__step {
+        //Size
+        width: 100%;
+        @media (min-width: 768px) {
+          width: 20%;
+        }
+
+        //Padding & Margins
+        margin-bottom: 16px;
+        @media (min-width: 768px) {
+          margin-bottom: 0;
+        }
+
+        //Display
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        @media (min-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        //Design
+        text-align: left;
+        @media (min-width: 768px) {
+          text-align: center;
+        }
+
+        .process__step-number {
+          //Size
+          min-height: 52px;
+          min-width: 43px;
+          @media (min-width: 768px) {
+            min-height: 56px;
+            min-width: 52px;
+          }
+
+          //Padding & Margins
+          margin-bottom: 0px;
+          margin-right: 16px;
+          @media (min-width: 768px) {
+            margin-bottom: 16px;
+            margin-right: 0px;
+          }
+
+          //Display
+          display: grid;
+          place-items: center;
+
+          //Design
+          background-color: $primary;
+          border-radius: 8px;
+          color: $light;
+          font-family: $display;
+          font-size: 28px;
+          @media (min-width: 768px) {
+            font-size: 36px;
+          }
+        }
+      }
+
+      .process__divider {
+        //Size
+        width: 20%;
+
+        //Display
+        display: none;
+        @media (min-width: 768px) {
+          display: grid;
+          place-items: center;
+        }
+
+        div {
+          //Size
+          height: 4px;
+          width: 80%;
+          min-width: 100px;
+          max-width: 160px;
+
+          //Design
+          border-bottom: $primary dashed 4px;
+        }
+      }
+    }
+  }
+}

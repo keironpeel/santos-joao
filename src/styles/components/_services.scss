@@ -1,0 +1,38 @@
+.services {
+  //Size
+  min-height: 48px;
+
+  //Padding & Margins
+  @include page-margin;
+
+  //Display
+  display: flex;
+  justify-content: center;
+
+  //Design
+  background-color: $primary;
+  color: $light;
+  text-align: center;
+
+  .services-content {
+    //Size
+    @include page-container;
+
+    //Display
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    div {
+      //Padding & Margins
+      padding: 8px;
+      @media (min-width: 768px) {
+        padding: none;
+      }
+    }
+  }
+}

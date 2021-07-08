@@ -1,49 +1,36 @@
 import * as React from "react";
-import styled from "styled-components";
-import "../style.css";
-
-const Outer = styled.main`
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  background-color: #2151a6;
-  margin: 0;
-  padding: 0;
-`;
-
-const Wrapper = styled.div`
-  text-align: center;
-  color: white;
-  font-family: "DM Serif Display", serif;
-`;
-
-const Heading1 = styled.h1`
-  font-size: 4rem;
-`;
-
-const Heading2 = styled.h2`
-  font-size: 3rem;
-`;
+import Seo from "../components/SEO";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Services from "../components/Services";
+import About from "../components/About";
+import HowItWorks from "../components/HowItWorks";
+import Testimonials from "../components/Testimonials";
+import Contact from "../components/Contact";
+import Faq from "../components/FAQ";
+import Footer from "../components/Footer";
+import "../styles/style.css";
 
 const IndexPage = () => {
   return (
-    <Outer>
-      <Wrapper>
-        <title>João Santos</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin
-        ></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
-          rel="stylesheet"
-        ></link>
-        <Heading1>João Santos</Heading1>
-        <Heading2>Coming Soon</Heading2>
-      </Wrapper>
-    </Outer>
+    <div>
+      <Seo></Seo>
+      <Header></Header>
+      <main>
+        <Hero></Hero>
+        <Services></Services>
+        <About></About>
+        <HowItWorks></HowItWorks>
+        <Testimonials></Testimonials>
+        <div className="contact-faq">
+          <div className="contact-faq-content">
+            <Contact></Contact>
+            <Faq></Faq>
+          </div>
+        </div>
+      </main>
+      <Footer></Footer>
+    </div>
   );
 };
 
