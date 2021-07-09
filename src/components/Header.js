@@ -42,7 +42,7 @@ const Header = () => {
       </div>
       <div className="header__main">
         <div className="header__main-content">
-          <div className="header__logo">JS</div>
+          <div className="header__logo">João Santos</div>
           <nav>
             <a href="#hero">Home</a>
             <a href="#about">About me</a>
