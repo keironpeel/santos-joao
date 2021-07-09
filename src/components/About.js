@@ -4,14 +4,14 @@ import profilePhoto from "../images/profile-picture.png";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-content">
         <div className="about__image">
           <div>
             <img src={tiles} alt="tiles" />
           </div>
           <div>
-            <img src={profilePhoto} alt="João Santos Profile Picture" />
+            <img src={profilePhoto} alt="João Santos" />
           </div>
         </div>
         <div className="about__text">
@@ -31,7 +31,7 @@ const About = () => {
             Visas to setting up a bank account and insurances quotes.{" "}
           </p>
           <p>Let me be your helping hand on your journey to Portugal!</p>
-          <a href="#">Contact me</a>
+          <a href="#contact">Contact me</a>
         </div>
       </div>
     </section>

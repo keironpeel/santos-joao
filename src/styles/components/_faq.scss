@@ -4,4 +4,55 @@
   @media (min-width: 992px) {
     width: 50%;
   }
+
+  .faqs {
+    .faq-container {
+      //Padding & Margins
+      margin-bottom: 8px;
+
+      .faq-question {
+        //Size
+        height: 40px;
+
+        //Padding & Margins
+        padding: 0 20px;
+
+        //Display
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        //Design
+        background-color: $primary;
+        color: $light;
+
+        .fa-plus {
+          //Design
+          cursor: pointer;
+        }
+
+        .fa-minus {
+          //Design
+          cursor: pointer;
+          display: none;
+        }
+      }
+
+      .faq-answer {
+        //Padding & Margins
+        padding: 8px 20px;
+
+        //Display
+        display: none;
+
+        //Design
+        border: $primary solid 2px;
+
+        a {
+          all: unset;
+          @include button;
+        }
+      }
+    }
+  }
 }

@@ -44,28 +44,29 @@ const Header = () => {
         <div className="header__main-content">
           <div className="header__logo">JS</div>
           <nav>
-            <a href="#">Home</a>
-            <a href="#">About me</a>
-            <a href="#">How it works</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Contact me</a>
-            <a href="#">FAQ</a>
+            <a href="#hero">Home</a>
+            <a href="#about">About me</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact me</a>
+            <a href="#faq">FAQ</a>
           </nav>
           <div
             className="header__menu-toggle"
             onClick={() => toggleNavigation()}
+            role="navigation"
           >
             <i className="fas fa-bars"></i>
           </div>
         </div>
       </div>
       <div className="mobile-navigation">
-        <a href="#">Home</a>
-        <a href="#">About me</a>
-        <a href="#">How it works</a>
-        <a href="#">Testimonials</a>
-        <a href="#">Contact me</a>
-        <a href="#">FAQ</a>
+        <a href="#hero">Home</a>
+        <a href="#about">About me</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact me</a>
+        <a href="#faq">FAQ</a>
       </div>
     </header>
   );

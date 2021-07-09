@@ -5,7 +5,7 @@ import Review3 from "../images/Review-3-Bubble.png";
 
 const Testimonials = () => {
   return (
-    <section className="testimonials">
+    <section className="testimonials" id="testimonials">
       <div className="testimonials-content">
         <h2>50+ satisfied clients, from 25+ countries</h2>
         <div className="reviews">

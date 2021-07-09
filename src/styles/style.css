@@ -748,8 +748,8 @@ h2 {
 .contact-faq {
   padding-left: 24px;
   padding-right: 24px;
-  margin-top: 112px;
-  margin-bottom: 112px;
+  margin-top: 64px;
+  margin-bottom: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,6 +769,13 @@ h2 {
   .contact-faq {
     padding-left: 64px;
     padding-right: 64px;
+  }
+}
+
+@media (min-height: 768px) {
+  .contact-faq {
+    margin-top: 112px;
+    margin-bottom: 112px;
   }
 }
 
@@ -865,6 +872,56 @@ h2 {
   .FAQ {
     width: 50%;
   }
+}
+
+.FAQ .faqs .faq-container {
+  margin-bottom: 8px;
+}
+
+.FAQ .faqs .faq-container .faq-question {
+  height: 40px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2151a6;
+  color: #ffffff;
+}
+
+.FAQ .faqs .faq-container .faq-question .fa-plus {
+  cursor: pointer;
+}
+
+.FAQ .faqs .faq-container .faq-question .fa-minus {
+  cursor: pointer;
+  display: none;
+}
+
+.FAQ .faqs .faq-container .faq-answer {
+  padding: 8px 20px;
+  display: none;
+  border: #2151a6 solid 2px;
+}
+
+.FAQ .faqs .faq-container .faq-answer a {
+  all: unset;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 32px;
+  padding: 8px 32px;
+  display: block;
+  background-color: #2151a6;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 footer {

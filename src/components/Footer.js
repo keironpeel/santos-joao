@@ -17,12 +17,12 @@ const Footer = () => {
             </a>
           </div>
           <div className="footer__navigation">
-            <a href="#">Home</a>
-            <a href="#">About me</a>
-            <a href="#">How it works</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Contact me</a>
-            <a href="#">FAQ</a>
+            <a href="#hero">Home</a>
+            <a href="#about">About me</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact me</a>
+            <a href="#faq">FAQ</a>
           </div>
         </div>
       </div>

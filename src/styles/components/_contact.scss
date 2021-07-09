@@ -1,8 +1,12 @@
 .contact-faq {
   //Padding & Margins
   @include page-margin;
-  margin-top: 112px;
-  margin-bottom: 112px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  @media (min-height: 768px) {
+    margin-top: 112px;
+    margin-bottom: 112px;
+  }
 
   //Display
   display: flex;

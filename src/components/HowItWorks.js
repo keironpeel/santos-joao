@@ -2,7 +2,7 @@ import * as React from "react";
 
 const HowItWorks = () => {
   return (
-    <section className="how-it-works">
+    <section className="how-it-works" id="how-it-works">
       <div className="how-it-works-content">
         <h2>How it works</h2>
         <div className="how-it-works__process">
