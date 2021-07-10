@@ -9,10 +9,16 @@ const Footer = () => {
         </div>
         <div className="footer__links">
           <div className="footer__social-icons">
-            <a href="https://www.facebook.com/luisjoaorelocationconsultants">
+            <a
+              href="https://www.facebook.com/luisjoaorelocationconsultants"
+              target="_blank"
+            >
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-feitosa-67a14b19a/">
+            <a
+              href="https://linkedin.com/in/jo%C3%A3o-pedro-santos-67a14b19a"
+              target="_blank"
+            >
               <i className="fab fa-linkedin-in"></i>
             </a>
           </div>

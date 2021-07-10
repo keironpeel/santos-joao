@@ -1,19 +1,11 @@
 import * as React from "react";
-import tiles from "../images/tiles.jpg";
-import profilePhoto from "../images/profile-picture.png";
+import portrait from "../images/portrait.jpg";
 
 const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-content">
-        <div className="about__image">
-          <div>
-            <img src={tiles} alt="tiles" />
-          </div>
-          <div>
-            <img src={profilePhoto} alt="João Santos" />
-          </div>
-        </div>
+        <div className="about__image"></div>
         <div className="about__text">
           <h2>Who am I?</h2>
           <p>

@@ -23,76 +23,25 @@
 
     .about__image {
       //Size
+      height: 300px;
       width: 100%;
       @media (min-width: 992px) {
-        width: 50%;
+        height: auto;
+        width: 40%;
       }
 
       //Display
-      display: grid;
-      place-items: center;
-      grid-template-columns: repeat(12, 1fr);
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      //Position
-      position: relative;
-
-      div:nth-of-type(1) {
-        //Padding & Margins
-        margin-top: -10%;
-        @media (min-width: 992px) {
-          margin-top: 0;
-        }
-
-        //Display
-        grid-column: 1 / 13;
-        grid-row: 1;
-        @media (min-width: 992px) {
-          grid-column: 1 / 12;
-        }
-
-        img {
-          //Size
-          height: 200px;
-          @media (min-width: 992px) {
-            height: 100%;
-          }
-
-          //Design
-          object-fit: cover;
-        }
-      }
-
-      div:nth-of-type(2) {
-        //Padding & Margins
-        padding-top: 10%;
-        @media (min-width: 992px) {
-          padding-top: 0;
-        }
-
-        //Display
-        display: flex;
-        justify-content: center;
-        grid-row: 1;
-        grid-column: 1 / 13;
-        @media (min-width: 992px) {
-          grid-column: 9 / span 8;
-        }
-
-        //Design
-        z-index: 1;
-
-        img {
-          //Size
-          width: 80%;
-        }
-      }
-
-      img {
-        //Size
-        width: 100%;
-
-        //Display
-        display: block;
+      //Design
+      background-image: url("../images/portrait.jpg");
+      background-position: 50% 25%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @media (min-width: 992px) {
+        background-position: 50% 50%;
       }
     }
 
@@ -100,10 +49,15 @@
       //Size
       width: 100%;
       @media (min-width: 992px) {
-        width: 50%;
+        width: 60%;
       }
 
       //Padding & Margins
+      padding-left: 0;
+      @media (min-width: 992px) {
+        padding-left: 10%;
+      }
+
       //padding-left: 16px;
 
       p:nth-of-type(1) {
