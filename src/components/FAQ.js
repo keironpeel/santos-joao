@@ -100,7 +100,7 @@ const Faq = () => {
         <div className="faq-container">
           <div className="faq-question">
             <div>What do I need a NIF for?</div>
-            <div onClick={() => toggleFaqOne()} role="tab">
+            <div onClick={() => toggleFaqOne()} role="rowheader">
               <i class="fas fa-plus" id="faqOnePlus"></i>
               <i class="fas fa-minus" id="faqOneMinus"></i>
             </div>
@@ -128,7 +128,7 @@ const Faq = () => {
         <div className="faq-container">
           <div className="faq-question">
             <div>Which Visa is for me?</div>
-            <div onClick={() => toggleFaqTwo()} role="tab">
+            <div onClick={() => toggleFaqTwo()} role="rowheader">
               <i class="fas fa-plus" id="faqTwoPlus"></i>
               <i class="fas fa-minus" id="faqTwoMinus"></i>
             </div>
@@ -145,7 +145,7 @@ const Faq = () => {
         <div className="faq-container">
           <div className="faq-question">
             <div>Is Portugal tax-free?</div>
-            <div onClick={() => toggleFaqThree()} role="tab">
+            <div onClick={() => toggleFaqThree()} role="rowheader">
               <i class="fas fa-plus" id="faqThreePlus"></i>
               <i class="fas fa-minus" id="faqThreeMinus"></i>
             </div>

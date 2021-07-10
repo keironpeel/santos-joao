@@ -12,12 +12,14 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/luisjoaorelocationconsultants"
               target="_blank"
+              rel="noreferrer"
             >
               <i className="fab fa-facebook-f"></i>
             </a>
             <a
               href="https://linkedin.com/in/jo%C3%A3o-pedro-santos-67a14b19a"
               target="_blank"
+              rel="noreferrer"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
