@@ -15,7 +15,7 @@ const HowItWorks = () => {
           </div>
           <div className="process__step">
             <div className="process__step-number">2</div>
-            <div>Decide which services are necessary</div>
+            <div>Decide which services are required</div>
           </div>
           <div className="process__divider">
             <div></div>

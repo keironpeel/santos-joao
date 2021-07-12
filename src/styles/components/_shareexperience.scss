@@ -1,0 +1,26 @@
+.share-experience {
+  //Padding & Margins
+  @include page-margin;
+  padding-bottom: 2em;
+
+  //Display
+  display: flex;
+  justify-content: center;
+
+  //Design
+
+  .share-experience__content {
+    //Size
+    @include page-container;
+
+    //Display
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      //Design
+      @include button;
+    }
+  }
+}

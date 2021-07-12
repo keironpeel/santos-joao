@@ -17,7 +17,7 @@ const Footer = () => {
               <i className="fab fa-facebook-f"></i>
             </a>
             <a
-              href="https://linkedin.com/in/jo%C3%A3o-pedro-santos-67a14b19a"
+              href="https://www.linkedin.com/in/jo%C3%A3o-pedro-santos-67a14b19a"
               target="_blank"
               rel="noreferrer"
             >

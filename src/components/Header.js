@@ -36,7 +36,7 @@ const Header = () => {
               <i className="fab fa-facebook-f"></i>
             </a>
             <a
-              href="https://linkedin.com/in/jo%C3%A3o-pedro-santos-67a14b19a"
+              href="https://www.linkedin.com/in/jo%C3%A3o-pedro-santos-67a14b19a"
               target="_blank"
               rel="noreferrer"
             >
@@ -44,7 +44,7 @@ const Header = () => {
             </a>
           </div>
           <div>
-            <a href="mailto:info@santosjoao.com">info@santosjoao.com</a>
+            <a href="mailto:santosjp.pt@gmail.com">santosjp.pt@gmail.com</a>
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import Contact from "../components/Contact";
 import Faq from "../components/FAQ";
 import Footer from "../components/Footer";
 import "../styles/style.css";
+import ShareExperience from "../components/ShareExperience";
 
 const IndexPage = () => {
   return (
@@ -22,6 +23,7 @@ const IndexPage = () => {
         <About></About>
         <HowItWorks></HowItWorks>
         <Testimonials></Testimonials>
+        <ShareExperience></ShareExperience>
         <div className="contact-faq">
           <div className="contact-faq-content">
             <Contact></Contact>

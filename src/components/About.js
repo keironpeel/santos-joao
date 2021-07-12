@@ -17,8 +17,8 @@ const About = () => {
             thrill, excitement and experiences of living abroad. But I soon
             noticed that dealing with foreign authorities can be quite a
             struggle, even for the most prepared person. That's how the idea for
-            this platform started. I combined my knowledge of Portuguese law,
-            language and my own personal experiences to assist you. From NIF &
+            this platform started. I have combined my knowledge of Portuguese
+            law, language and my personal experiences to assist you. From NIF &
             Visas to setting up a bank account and insurances quotes.{" "}
           </p>
           <p>Let me be your helping hand on your journey to Portugal!</p>

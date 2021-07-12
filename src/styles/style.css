@@ -192,7 +192,7 @@ h2 {
 
 .hero-section {
   height: 50vh;
-  padding-top: 86px;
+  padding-top: 16px;
   background-image: url("../images/hero-image.jpg");
   background-position: 50% 30%;
   background-repeat: no-repeat;
@@ -206,12 +206,24 @@ h2 {
   }
 }
 
+@media (min-width: 576px) {
+  .hero-section {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-section {
+    padding-top: 86px;
+  }
+}
+
 .hero-section h1 {
   margin: 0;
   font-size: 48px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   .hero-section h1 {
     font-size: 96px;
   }
@@ -223,7 +235,7 @@ h2 {
   font-size: 40px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   .hero-section h2 {
     font-size: 80px;
   }
@@ -691,6 +703,61 @@ h2 {
   .testimonials .testimonials-content .reviews .reviews__review img {
     width: 75%;
   }
+}
+
+.share-experience {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .share-experience {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .share-experience {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+.share-experience .share-experience__content {
+  width: 100%;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.share-experience .share-experience__content a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 32px;
+  padding: 8px 32px;
+  display: block;
+  background-color: #2151a6;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .contact-faq {

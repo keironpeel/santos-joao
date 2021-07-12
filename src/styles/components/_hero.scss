@@ -6,7 +6,13 @@
   }
 
   //Padding & Margins
-  padding-top: 86px;
+  padding-top: 16px;
+  @media (min-width: 576px) {
+    padding-top: 40px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 86px;
+  }
 
   //Design
   background-image: url("../images/hero-image.jpg");
@@ -21,7 +27,7 @@
 
     //Design
     font-size: 48px;
-    @media (min-width: 900px) {
+    @media (min-width: 992px) {
       font-size: 96px;
     }
   }
@@ -33,7 +39,7 @@
     //Design
     color: $light;
     font-size: 40px;
-    @media (min-width: 900px) {
+    @media (min-width: 992px) {
       font-size: 80px;
     }
   }
