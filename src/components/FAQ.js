@@ -122,7 +122,7 @@ const Faq = () => {
             Did you know? Portuguese banks are now offering temporary NIFs.
             Nevertheless, you’ll always end up in need of a permanent NIF
             number.
-            <a href="#contact">Get your NIF</a>
+            <a href="mailto:santosjp.pt@gmail.com">Get your NIF</a>
           </div>
         </div>
         <div className="faq-container">
@@ -139,7 +139,7 @@ const Faq = () => {
             variety that might apply to your case, especifically. Are you
             looking to Relocate to Portugal for studies, work, tourism or are
             you looking into living here off of your personal revenue?
-            <a href="#contact">Tell me about it here</a>
+            <a href="mailto:santosjp.pt@gmail.com">Tell me about it here</a>
           </div>
         </div>
         <div className="faq-container">
@@ -153,7 +153,7 @@ const Faq = () => {
           <div className="faq-answer" id="faqThree">
             No. There is, however, a reduced tax frame with the NHR
             (Non-Habitual Residence).
-            <a href="#contact">Click here for more</a>
+            <a href="mailto:santosjp.pt@gmail.com">Click here for more</a>
           </div>
         </div>
       </div>

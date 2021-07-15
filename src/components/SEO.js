@@ -7,7 +7,32 @@ const SEO = () => {
       {/* General tags */}
       <title>Relocation Consultant | João Santos</title>
       <meta name="description" content="" />
-      <meta name="image" content="" />
+      <meta
+        name="image"
+        content="Are you planning to relocate to Portugal? Let me help you get residency and all the necessary documents such as your NIF and visas."
+      />
+
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2151a6" />
+      <meta name="msapplication-TileColor" content="#ffffff" />
+      <meta name="theme-color" content="#ffffff"></meta>
 
       {/* OpenGraph tags */}
       <meta property="og:url" content="" />

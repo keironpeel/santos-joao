@@ -19,7 +19,7 @@ const About = () => {
             struggle, even for the most prepared person. That's how the idea for
             this platform started. I have combined my knowledge of Portuguese
             law, language and my personal experiences to assist you. From NIF &
-            Visas to setting up a bank account and insurances quotes.{" "}
+            Visas to setting up a bank account and insurances quotes.
           </p>
           <p>Let me be your helping hand on your journey to Portugal!</p>
           <a href="#contact">Contact me</a>
