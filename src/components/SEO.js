@@ -68,6 +68,11 @@ const SEO = () => {
         async
         defer
       ></script>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-CWED9V677T"
+      ></script>
+      <script>{`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-CWED9V677T');`}</script>
     </Helmet>
   );
 };
