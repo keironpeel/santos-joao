@@ -14,5 +14,13 @@ module.exports = {
         enableWebVitalsTracking: true,
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `3nol2i9fofbd`,
+        accessToken: `6mAYZEd3tabfDqMoua5vxWeQb02MgHF7WjbpxIgaxoU`,
+      },
+    },
+    "gatsby-transformer-remark",
   ],
 };

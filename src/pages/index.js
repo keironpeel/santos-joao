@@ -1,4 +1,5 @@
 import * as React from "react";
+import { graphql } from "gatsby";
 import Seo from "../components/SEO";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -12,16 +13,16 @@ import Footer from "../components/Footer";
 import "../styles/style.css";
 import ShareExperience from "../components/ShareExperience";
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   return (
     <div>
       <Seo></Seo>
       <Header></Header>
       <main>
         <Hero></Hero>
-        <Services></Services>
         <About></About>
         <HowItWorks></HowItWorks>
+        <Services></Services>
         <Testimonials></Testimonials>
         <ShareExperience></ShareExperience>
         <div className="contact-faq">

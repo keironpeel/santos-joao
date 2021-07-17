@@ -53,7 +53,7 @@ const Header = () => {
           <div className="header__logo">JS</div>
           <nav>
             <a href="#hero">Home</a>
-            <a href="#about">About me</a>
+            <a href="#faqnif">About me</a>
             <a href="#how-it-works">How it works</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contact me</a>
