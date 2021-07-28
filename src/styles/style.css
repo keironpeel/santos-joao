@@ -1027,6 +1027,10 @@ h3 {
   border: #2151a6 solid 2px;
 }
 
+.FAQ .faqs .faq-container .faq-answer p {
+  font-size: 16px !important;
+}
+
 .FAQ .faqs .faq-container .faq-answer a {
   all: unset;
   width: -webkit-fit-content;

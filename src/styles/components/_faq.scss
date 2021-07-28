@@ -48,6 +48,11 @@
         //Design
         border: $primary solid 2px;
 
+        p {
+          //Design
+          font-size: 16px !important;
+        }
+
         a {
           all: unset;
           @include button;

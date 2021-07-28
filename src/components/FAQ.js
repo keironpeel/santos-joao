@@ -1,6 +1,7 @@
 import * as React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
-const Faq = () => {
+export default function Faq() {
   var faqOneOpen = false;
   var faqTwoOpen = false;
   var faqThreeOpen = false;
@@ -92,73 +93,103 @@ const Faq = () => {
       });
     }
   }
-
   return (
-    <section className="FAQ" id="faq">
-      <h2>FAQ</h2>
-      <div className="faqs">
-        <div className="faq-container">
-          <div className="faq-question" id="faqnif">
-            <div>What do I need a NIF for?</div>
-            <div onClick={() => toggleFaqOne()} role="rowheader">
-              <i className="fas fa-plus" id="faqOnePlus"></i>
-              <i className="fas fa-minus" id="faqOneMinus"></i>
+    <StaticQuery
+      query={graphql`
+        query FaqQuery {
+          contentfulFaq {
+            title
+            question1
+            answer1 {
+              childMarkdownRemark {
+                html
+              }
+            }
+            button1Text
+            button1Link
+            question2
+            answer2 {
+              childMarkdownRemark {
+                html
+              }
+            }
+            button2Text
+            button2Link
+            question3
+            answer3 {
+              childMarkdownRemark {
+                html
+              }
+            }
+            button3Text
+            button3Link
+          }
+        }
+      `}
+      render={(data) => (
+        <section className="FAQ" id="faq">
+          <h2>{data.contentfulFaq.title}</h2>
+          <div className="faqs">
+            <div className="faq-container">
+              <div className="faq-question" id="faqnif">
+                <div>{data.contentfulFaq.question1}</div>
+                <div onClick={() => toggleFaqOne()} role="rowheader">
+                  <i className="fas fa-plus" id="faqOnePlus"></i>
+                  <i className="fas fa-minus" id="faqOneMinus"></i>
+                </div>
+              </div>
+              <div className="faq-answer" id="faqOne">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: data.contentfulFaq.answer1.childMarkdownRemark.html,
+                  }}
+                />
+                <a href={data.contentfulFaq.button1Link}>
+                  {data.contentfulFaq.button1Text}
+                </a>
+              </div>
+            </div>
+            <div className="faq-container">
+              <div className="faq-question">
+                <div>{data.contentfulFaq.question2}</div>
+                <div onClick={() => toggleFaqTwo()} role="rowheader">
+                  <i className="fas fa-plus" id="faqTwoPlus"></i>
+                  <i className="fas fa-minus" id="faqTwoMinus"></i>
+                </div>
+              </div>
+              <div className="faq-answer" id="faqTwo">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: data.contentfulFaq.answer2.childMarkdownRemark.html,
+                  }}
+                />
+                <a href={data.contentfulFaq.button2Link}>
+                  {data.contentfulFaq.button2Text}
+                </a>
+              </div>
+            </div>
+            <div className="faq-container">
+              <div className="faq-question">
+                <div>{data.contentfulFaq.question3}</div>
+                <div onClick={() => toggleFaqThree()} role="rowheader">
+                  <i className="fas fa-plus" id="faqThreePlus"></i>
+                  <i className="fas fa-minus" id="faqThreeMinus"></i>
+                </div>
+              </div>
+              <div className="faq-answer" id="faqThree">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: data.contentfulFaq.answer3.childMarkdownRemark.html,
+                  }}
+                />
+                <a href={data.contentfulFaq.button3Link}>
+                  {data.contentfulFaq.button3Text}
+                </a>
+              </div>
             </div>
           </div>
-          <div className="faq-answer" id="faqOne">
-            If you are planing to relocate to Portugal, the Portuguese Taxpayer
-            Number, or NIF, will come very handy, or rather essential. Having a
-            NIF number allows you to open bank accounts, make lease contracts,
-            it’s a step towards access to National Health System and more.
-            <br />
-            <br /> In fact you may apply for a NIF number without even
-            establishing your residence here, if it suits you, tax-wise. That
-            also means you don’t have to be in the country to get a NIF
-            beforehand. Since you are not yet a resident in the country, you’ll
-            need someone else to apply for the Taxpayer number on your behalf,
-            they’ll be your Fiscal Representative.
-            <br />
-            <br />
-            Did you know? Portuguese banks are now offering temporary NIFs.
-            Nevertheless, you’ll always end up in need of a permanent NIF
-            number.
-            <a href="mailto:santosjp.pt@gmail.com">Get your NIF</a>
-          </div>
-        </div>
-        <div className="faq-container">
-          <div className="faq-question">
-            <div>Which Visa is for me?</div>
-            <div onClick={() => toggleFaqTwo()} role="rowheader">
-              <i className="fas fa-plus" id="faqTwoPlus"></i>
-              <i className="fas fa-minus" id="faqTwoMinus"></i>
-            </div>
-          </div>
-          <div className="faq-answer" id="faqTwo">
-            There are different types of visa, depending on your circumstances.
-            From short term visas to long term (National) visas, there’s a
-            variety that might apply to your case, especifically. Are you
-            looking to Relocate to Portugal for studies, work, tourism or are
-            you looking into living here off of your personal revenue?
-            <a href="mailto:santosjp.pt@gmail.com">Tell me about it here</a>
-          </div>
-        </div>
-        <div className="faq-container">
-          <div className="faq-question">
-            <div>Is Portugal tax-free?</div>
-            <div onClick={() => toggleFaqThree()} role="rowheader">
-              <i className="fas fa-plus" id="faqThreePlus"></i>
-              <i className="fas fa-minus" id="faqThreeMinus"></i>
-            </div>
-          </div>
-          <div className="faq-answer" id="faqThree">
-            No. There is, however, a reduced tax frame with the NHR
-            (Non-Habitual Residence).
-            <a href="mailto:santosjp.pt@gmail.com">Click here for more</a>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
+      )}
+    />
   );
-};
-
-export default Faq;
+}
